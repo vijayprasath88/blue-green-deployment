@@ -8,5 +8,4 @@
         - Deploy your "Blue" Application: >>cf push -f manifest-blue.yml      //(-f to select given manifest file and not default manifest file)
         - Deploy your "Green" Application: >>cf push -f manifest-green.yml
         
-        
-     ***Now Map Application Route to both Blue and Green Routes***
+  ***Now Map Application Route to both Blue and Green Routes***     
