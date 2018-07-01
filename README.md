@@ -1,4 +1,4 @@
-***Pivotal Cloud Foundry Blue Green Deployment Example ***
+***Pivotal Cloud Foundry Blue Green Deployment Example***
 
   Steps:
     
