@@ -26,4 +26,5 @@
     run the below command to check the application routes
     >>cf routes
     
-    use >> cf unmap-route blue-url -n application-route-url  
+    use below command to unmap an url from application url
+    >> cf unmap-route blue-url -n application-route-url  
