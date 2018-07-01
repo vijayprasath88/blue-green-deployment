@@ -1,0 +1,9 @@
+applications:
+- name: pcf-blue-${random-word}
+  memory: 1024M
+  instances: 1
+  path: target/blue-green-deployment-1.0.0-SNAPSHOT.jar
+  env:
+    COLOR: blue
+    MESSAGE: Pivotal Cloud Foundry Blue Green Deployment
+    JAVA_VERSION: 1.8.0_+
