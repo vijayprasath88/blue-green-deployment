@@ -12,4 +12,18 @@
   - After pushing both the applications to Pivotal Cloud Foundry we need to create an application route url and configure it as a domain to both green and blue url's.
   
   In this example, we have pcf-blue-${random-word} and pcf-green-${random-word} url's where random-word is generated automatically. 
+  Let's create an application route url as like below,
+  Application Url <a>pcf-blue-or-green-${random-word}-domain-name</a>
   
+  Run the below commands
+  
+    Blue:
+    cf map-route pcf-blue-${random-word}-domain-name -n pcf-blue-or-green-${random-word}
+    
+    Green:
+    cf map-route pcf-green-${random-word}-domain-name -n pcf-blue-or-green-${random-word}
+    
+    run the below command to check the application routes
+    >>cf routes
+    
+    use >> cf unmap-route blue-url -n application-route-url
